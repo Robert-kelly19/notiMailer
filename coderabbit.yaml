@@ -56,6 +56,7 @@ reviews:
   auto_title_placeholder: "@coderabbitai"
   auto_title_instructions: "Create titles focusing on API changes, architectural improvements, or backend functionality"
   review_status: false
+  review_status_detailed: true
   review_walkthrough: true
   review_walkthrough_detailed: true
   review_walkthrough_explanatory: true # Explain reasoning for learning
@@ -67,7 +68,7 @@ reviews:
   # Path-specific review instructions
   path_instructions:
     - path: "src/**/*.controller.ts"
-      instructions: "Review REST endpoints, DTOs, validation, error handling, status codes, auth guards. Explain API design principles and HTTP best practices."
+      instructions: "Review REST endpoints, DTOs, validation, error handling, unuse variables, status codes, auth guards. Explain API design principles and HTTP best practices."
 
     - path: "src/**/*.service.ts"
       instructions: "Review business logic separation, dependency injection, error handling, database interactions. Explain service layer architecture."

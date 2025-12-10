@@ -23,7 +23,7 @@ export class RdsStack extends cdk.Stack {
         securityGroup.addIngressRule(
             ec2.Peer.ipv4(vpc.vpcCidrBlock),
             ec2.Port.tcp(5432),
-            'Allow Postgres access from within VPC'
+            'Allow Postgres access from within VPC',
         );
 
         const isProduction = process.env.CDK_ENV === 'prod';

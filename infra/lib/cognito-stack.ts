@@ -62,6 +62,6 @@ Click the link to verify your email:
         new cdk.CfnOutput(this, 'UserPoolClientId', {
             value: userPoolClient.userPoolClientId,
             description: 'The ID of the Cognito User Pool Client',
-        }); 
+        });
     }
 }

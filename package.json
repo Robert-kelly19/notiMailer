@@ -11,7 +11,7 @@
         "prepare": "husky install"
     },
     "lint-staged": {
-        "*.{js,ts,tsx, jsx}": [
+        "*.{js,ts,tsx,jsx}": [
             "eslint --quiet --fix"
         ],
         "*.{json,md,html,js,jsx,ts,tsx}": [

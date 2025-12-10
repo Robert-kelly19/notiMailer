@@ -27,7 +27,7 @@ module.exports = [
     },
     rules: {
       ...js.configs.recommended.rules,
-      "no-undef": "off", // 🔥 Fixes React not defined
+      "no-undef": "off",
     },
   }),
 
@@ -36,7 +36,7 @@ module.exports = [
     files: [
       "apps/web/**/*.{js,jsx,ts,tsx}",
       "packages/**/*.{js,jsx,ts,tsx}",
-      "apps/docs/**/*.{js,jsx,ts,tsx}", // your docs app folder
+      "apps/services/**/*.{js,jsx,ts,tsx}", 
     ],
     plugins: {
       react,

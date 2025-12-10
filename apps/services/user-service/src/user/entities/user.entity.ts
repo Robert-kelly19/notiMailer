@@ -10,11 +10,11 @@ export class User {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column()
+  @Column({ nullable: true })
   @IsOptional()
   name?: string;
 
-  @Column()
+  @Column({ nullable: true })
   @IsOptional()
   company?: string;
 

@@ -38,7 +38,7 @@ import { User } from './user/entities/user.entity';
           password: configService.get<string>('DB_PASSWORD'),
           database: configService.get<string>('DB_NAME'),
           entities: [User],
-          synchronize: true,
+          synchronize:configService.get<string>('NODE_ENV') !== 'production',
         };
       },
     }),

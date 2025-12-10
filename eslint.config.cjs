@@ -36,7 +36,6 @@ module.exports = [
     files: [
       "apps/web/**/*.{js,jsx,ts,tsx}",
       "packages/**/*.{js,jsx,ts,tsx}",
-      "apps/services/**/*.{js,jsx,ts,tsx}", 
     ],
     plugins: {
       react,
@@ -103,4 +102,19 @@ module.exports = [
       },
     },
   },
+
+  // NestJS backend services
+{
+  files: ["apps/services/**/*.ts"],
+  languageOptions: {
+    globals: {
+      ...globals.node,
+      ...globals.es2021,
+    },
+  },
+  rules: {
+    "no-var": "error",
+    "prefer-template": "error",
+  },
+},
 ];

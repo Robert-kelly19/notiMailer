@@ -55,7 +55,7 @@ reviews:
   high_level_summary_in_walkthrough: true
   auto_title_placeholder: "@coderabbitai"
   auto_title_instructions: "Create titles focusing on API changes, architectural improvements, or backend functionality"
-  review_status: false
+  review_status: true
   review_walkthrough: true
   review_walkthrough_detailed: true
   review_walkthrough_explanatory: true # Explain reasoning for learning
